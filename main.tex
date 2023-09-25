@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Managing Research Progress with Research Items}
+\author{Dogukan Yigit Polat}
+\date{September 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+Research work is typically hard to manage, and keeping track of the progress is often very hard. On a larger scale, papers can be seen as products and counted as research points to track overall productivity. However, in a smaller scope, tracking progress by counting the number of published papers is too coarse and makes it harder to understand the pace. Just like "story points" in software development processes, we can break research work down into meaningful self-contained items. In this note, I propose the "Research Item" (RI). An RI is an individual unit of research activity that contributes to the larger research project or paper. 
+
+\section{Structure of a Research Item}
+In software development, we define story points to denote meaningful new features or changes to the product where each story point requires a piece of software to be developed; complete with its analysis, design, implementation, and testing stages. Similarly, a Research Item (RI) is a meaningful and self-contained piece of scientific knowledge (consider how data fundamentally differ from knowledge). An RI can also be considered a very small research paper. However, by definition, an RI cannot be divided into two or more RIs. I break an RI down into several key components that mandate its development.
+
+\subsection{The Idea}
+The Idea is the initial hypothesis, question, or problem that the researcher aims to address. This is where the scope of the RI is defined. The Idea should be clear, focused, and actionable. Reading and creating meaningful references to research materials such as books and scientific papers may be required. 
+
+\subsection{Design and Implementation of the Experiment}
+Once the Idea is clearly defined, the next step is to design the experiment or methodology that will be used to explore or test it. This involves selecting the appropriate methods, tools, and metrics to be used. The implementation of the experiment involves carrying out the designed methods, often involving a pilot study to ensure that the design is sound before full-scale data collection begins.
+
+\subsection{Data Collection}
+Data Collection is the phase where the experiment is conducted, and data are gathered. This could involve running simulations, performing experiments, or any other method that is appropriate for the research. Data collection must be systematic and unbiased but as opposed to a research paper that is to be published, a full-scale data collection is not necessary for an RI. 
+
+\subsection{Analysis}
+After data collection, the next step is to analyze the gathered data. This involves using statistical methods, computational algorithms, or qualitative methods to interpret the data. The goal is to draw meaningful conclusions that can either confirm or refute the initial Idea. This stage may also involve revisiting the design and data collection phases if the data do not support the hypothesis or if new questions arise.
+
+\subsection{Presentation}
+Presentation involves compiling the findings into a format that can be shared with others. The presentation should be concise and effectively communicating the research process and findings. 
+
+\section{Deliverables of a Research Item}
+A deliverable is any valuable output of an RI. The main deliverable of an RI is an RI report that explains all key components in detail. The report needs to be short yet complete in content. The presentation is the other important deliverable of an RI and should be easily reusable in other presentations with a bigger scope. Any other artifacts of the key components of the RI such as experiment setups, results, and plots also need to be treated as deliverables since they need to stay accessible at the time of writing a paper. As a result, the combination of all deliverables 
+
+\subsection{The Report}
+The RI report should include all the necessary information to understand, replicate, and reuse the key components of an RI. It should be complete but should not be verbose. A good RI report is focused and avoids unrelated and redundant information. The report can be organized into four main sections: Introduction, Methodology, Results and Analysis, and Conclusion. 
+
+\subsubsection{Introduction}
+In this section, "The Idea" is explained in complete detail. This section includes full commentary on the significance of the problem and the motivation behind the solution. It also highlights the intuition guiding the assumptions and the hypothesis.
+
+\subsubsection{Methodology}
+Methodology is the section where the exact experimental setup and changes to the previously existing experimentation framework are fully explained. Algorithms and formulas should be provided when necessary. Any software implementation needs to be referenced here (e.g. commit history, pull request).
+
+\subsubsection{Results and Analysis}
+This section combines the data collection and analysis components of an RI and describes what data were collected and how. It should explain the types and configurations of the experiments that were conducted and should provide an insightful analysis of the experimental results or observations. The analysis should involve informative plots or diagrams. References to the raw data and procedures for generating the visuals need to be provided in this section.
+
+\subsubsection{Conclusion}
+The conclusion wraps up the "Research Item". It summarizes the findings, critically evaluates "The Idea" based on the results, and provides potential future improvements.
+
+\subsection{The Presentation}
+The presentation serves as a condensed, visual, and easily digestible version of the Research Item (RI). Its primary purpose is to communicate the essence of the RI to a broader audience. The presentation should focus on the key elements of the RI, providing enough context and information for the audience to understand the significance, methodology, and findings of the research.
+
+\subsection{Research Artifacts}
+All research artifacts need to be accessible as a deliverable. These artifacts may include referenced works, raw data, procedures to generate plots from the raw data or any piece of code. If the experiment involves a software implementation, any new and modified code should be referenced preferably as links to commits or pull requests. 
+
+\section{Managing Research Using Research Items}
+Related RIs can be combined into full-scale research papers by formulating consistent storylines. Usually, the rough storyline for a potential paper is available to the researcher before conducting the research, and a backlog of RIs can be curated to plan for deadlines and project timelines. Just like story points in software development, the time required to complete each RI is highly dependent on the research team and the domain. However, counting RIs should be enough for measuring speed and planning since they are expected to be consistent for a single research team working on a certain domain. 
+
+\end{document}
